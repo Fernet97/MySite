@@ -1,0 +1,335 @@
+body{
+	padding-top: 50px;
+	background-color: #faeee7;
+		background-image: url("img/triangoli.png");
+    background-size: cover;
+	background-position: center center;
+}
+
+
+
+
+.bg-light {
+    background-color: #383e56  !important;
+		background-image: url("img/triangles.png");
+    background-size: cover;
+	background-position: center center;
+}
+
+
+
+.navbar-light .navbar-brand {
+    color: #f69e7b;
+}
+
+.navbar-light .navbar-brand:focus,  .navbar-light .navbar-brand:hover{
+    color: #f69e7b !important;
+}
+
+
+a.nav-link {
+    color: #d4b5b0 !important;
+}
+
+a.nav-link:hover{
+    color: #f69e7b  !important;
+
+}
+
+
+.social{
+ background-color: #383e56;
+		background-image: url("img/triangles.png");
+    background-size: cover;
+	background-position: center center;
+
+}
+
+
+.social .row{
+ max-width: 60%;
+ margin: auto;
+}
+
+
+.column {
+  width: 25%;
+  padding: 10px;  
+}
+
+
+.column img {
+  opacity: 0.8;
+  cursor: pointer;
+  width: 100%;
+	transition: 0.1s;
+}
+
+.column img:hover {
+-ms-transform: scale(1.5,1.5);
+-webkit-transform: scale(1.5,1.5);
+-moz-transform: scale(1.5,1.5);
+-o-transform: scale(1.5,1.5);
+}
+
+
+.column img:hover {
+  opacity: 1;
+}
+
+
+
+.carousel-inner .carousel-item{
+
+	min-height: 600px;
+    background-size: cover;
+	background-position: center center;
+}
+
+
+
+.projectext{
+	text-align: center;
+	width: 100%;
+	padding: 50px;
+	font-size: 2.5em;
+ margin-top: 25px;
+}
+
+
+
+#projectarea{
+
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+}
+
+.projectiem {
+  border-radius: 25px;
+  background: #383e56;
+box-shadow: 3px 3px;
+  margin: 30px;
+  background-image: url("img/triangles.png");
+    background-size: cover;
+	background-position: center center;
+  display: flex;
+  align-items: center;
+padding: 10px;
+transition: 0.5s;
+z-index: 1;
+
+
+}
+
+
+.projectiem:before {
+
+content: attr(data-text);
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+color: #fff;
+font-size: 7em;
+font-weight: 700;
+opacity: 0;
+letter-spacing: 30px;
+transition: 0.5s;
+white-space: nowrap;
+
+}
+
+.projectiem:hover:before {
+
+opacity: 0.6;
+letter-spacing: 0px;
+
+}
+
+
+
+
+
+.projectiem:hover {
+	transform: scale(1.2);
+	z-index: 1000;
+background: linear-gradient(217deg, rgba(246, 158, 123, .8), rgba(246, 158, 123,0) 70.71%),
+            linear-gradient(127deg, rgba(238, 218, 209, .8), rgba(238, 218, 209,0) 70.71%),
+            linear-gradient(336deg, rgba(212, 181, 176, .8), rgba(212, 181, 176,0) 70.71%);
+}
+
+
+
+
+
+
+.projectiem img{
+  width: 430px;
+  height: auto;
+border-radius: 30px;
+}
+
+
+
+
+#container{
+	display: flex;
+	flex-wrap: wrap;
+
+	justify-content: center;
+	padding: 10px;
+    margin-top: 50px;
+	margin-bottom: 200px;
+}
+
+
+.list-group{
+	border-radius: 10px;
+
+	width: 75%;
+    margin-right: 30px;
+margin-bottom: 30px;
+}
+
+
+
+
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+
+}
+
+/* Position the front and back side */
+.flip-card-front img{
+border-radius: 30px;
+box-shadow: 1px 1px;
+}
+
+
+/* Style the back side */
+.flip-card-back {
+  transform: rotateY(180deg);
+	padding: 15px;
+}
+
+
+
+
+.flip-card button {
+        margin-top: 20px;
+		width: 50%;
+border-radius: 30px;
+
+}
+
+
+.flip-card button img{
+
+		width: 100%;
+
+}
+
+
+
+
+
+footer{
+ background-color: #383e56;
+		background-image: url("img/triangles.png");
+    background-size: cover;
+	background-position: center center;
+}
+
+
+footer .row p {
+	color: #eedad1;
+}
+
+
+footer .row h5 {
+	color: #f69e7b;
+}
+
+.footer-copyright{
+	color: #eedad1; 
+}
+
+.footer-copyright a{
+	color: #f69e7b; 
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+  
+
+.projectiem img{
+  width: 230px;
+  height: auto;
+border-radius: 30px;
+
+}
+
+.projectiem:before {
+font-size: 4em;
+
+}
+
+#projectarea{
+
+}
+
+
+.list-group{
+	width: 100%;
+  margin-right: 0px;
+}
+
+.flip-card {
+
+}
+
+
+
+
+#container{
+
+}
+
+
+}
+
+
