@@ -2,7 +2,10 @@ var express = require('express');
 var app = express();
 var path = require('path');
 const ejs = require('ejs');
-var publico = path.join(__dirname, 'public');
+
+
+
+var publico = path.join(__dirname, 'public', "favicon.ico");
 
 
 app.set('view engine', 'ejs');
